@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="gender_array">
+        <item type="drawable" >@drawable/esporte</item>
+        <item type="drawable">@drawable/escola</item>
+        <item type="drawable">@drawable/feira</item>
+        <item type="drawable">@drawable/mercado</item>
+        <item type="drawable">@drawable/negocios</item>
+        <item type="drawable">@drawable/salario</item>
+        <item type="drawable">@drawable/tranferenciabanc</item>
+
+    </string-array>
+</resources>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MesesReceitaActivity">
+
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/superior"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        tools:context=".MesesActivity">
+
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#e6e6e6"
+            android:onClick="decrement"
+            android:src="@drawable/ic_chevron_left_black_24dp" />
+
+        <TextView
+            android:id="@+id/idMeses"
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Meses"
+            android:textSize="20dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#e6e6e6"
+            android:onClick="increment"
+            android:src="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+    </LinearLayout>
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/cabecario"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:paddingTop="40dp">
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Origem:"
+            android:textSize="20dp" />
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Valor:"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Data:"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvEmptyListM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="invisible"
+        android:text="+ Não existe dados"
+        />
+
+
+    <ListView
+        android:id="@+id/lvmesesR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"></ListView>
+
+</FrameLayout>

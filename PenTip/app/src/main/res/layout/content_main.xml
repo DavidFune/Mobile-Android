@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+
+    <View
+        android:id="@+id/rsumoview"
+        android:layout_width="384dp"
+        android:layout_height="157dp"
+        android:background="#00ffcc"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/textresumo"
+        android:layout_width="230dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/rsumoview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/rsumoview"
+        app:layout_constraintTop_toTopOf="@+id/rsumoview"
+        android:gravity="center"
+        android:textSize="50dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saldo Geral"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.201" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="21dp"
+        android:layout_height="30dp"
+        android:text="R$:"
+        app:layout_constraintBottom_toBottomOf="@+id/textresumo"
+        app:layout_constraintEnd_toStartOf="@+id/textresumo"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/rsumoview"
+        app:layout_constraintTop_toTopOf="@+id/textresumo"
+        app:layout_constraintVertical_bias="0.607" />
+
+    <TextView
+        android:id="@+id/spMesReceita"
+        android:layout_width="364dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#66ff99"
+        android:paddingLeft="70dp"
+        android:paddingTop="20dp"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rsumoview"
+        android:onClick="showmesesReceitas"/>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="21dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="32dp"
+        android:text="R$:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/spMesReceita" />
+
+    <TextView
+        android:id="@+id/spMesContas"
+        android:layout_width="334dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#66ff99"
+        android:paddingLeft="70dp"
+        android:paddingTop="20dp"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spMesReceita"
+        android:onClick="showmesesContas"
+        />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginLeft="76dp"
+        android:layout_marginTop="32dp"
+        android:text="R$:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/spMesContas" />
+
+    <View
+        android:id="@+id/cotacao"
+        android:layout_width="123dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginBottom="8dp"
+        android:background="#00ffcc"
+        android:backgroundTintMode="multiply"
+        android:onClick="buscarConversa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spMesContas"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="OnClick" />
+
+    <TextView
+        android:id="@+id/usdtext"
+        android:layout_width="101dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="8dp"
+        android:text="USD:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cotacao" />
+
+    <TextView
+        android:id="@+id/eurtext"
+        android:layout_width="101dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="8dp"
+        android:text="EUR:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usdtext" />
+
+    <TextView
+        android:id="@+id/gbptext"
+        android:layout_width="101dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="8dp"
+        android:text="GBP:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eurtext" />
+
+    <TextView
+        android:id="@+id/jpytext"
+        android:layout_width="101dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="JPY:"
+        app:layout_constraintBottom_toBottomOf="@+id/cotacao"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gbptext" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="114dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="Resumo Contas"
+        app:layout_constraintStart_toStartOf="@+id/spMesContas"
+        app:layout_constraintTop_toTopOf="@+id/spMesContas" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="128dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Resumo Receitas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/spMesReceita" />
+
+    <TextView
+        android:id="@+id/textMeses"
+        android:layout_width="294dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/butonIncremente"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toEndOf="@+id/butonDecremente"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/butonDecremente"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#00ffcc"
+        android:src="@drawable/ic_chevron_left_black_24dp"
+        android:onClick="decrementMain"/>
+
+    <ImageButton
+        android:id="@+id/butonIncremente"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#00ffcc"
+        android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+        android:onClick="incrementMain"/>
+
+</android.support.constraint.ConstraintLayout>

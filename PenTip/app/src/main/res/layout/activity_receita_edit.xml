@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ReceitaEditActivity">
+
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Origem da Receita"/>
+    <Spinner
+        android:id="@+id/spnaddsources"
+        android:layout_width="match_parent"
+        android:layout_height="35dp" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valor"/>
+    <EditText
+        android:id="@+id/EditValorR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data"/>
+    <EditText
+        android:id="@+id/EditDataR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="showDatePicker"
+        />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forma de recebimento"/>
+    <EditText
+        android:id="@+id/EditFrecebimentoR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descrção"/>
+
+    <EditText
+        android:id="@+id/EditDescricaoR"
+        android:layout_width="match_parent"
+        android:layout_height="145dp" />
+
+    <Button
+        android:id="@+id/Confirme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="confirmaEditReceita"
+        android:text="OK" />
+    <Button
+        android:id="@+id/DeleteR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="deleteReceita"
+        android:text="Delete"/>
+
+
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ContaeditActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textColor="#41413c"
+        android:layout_height="wrap_content"
+        android:text="Origem da Conta"/>
+
+
+    <Spinner
+        android:id="@+id/spnaddsources"
+        android:layout_width="match_parent"
+        android:layout_height="35dp" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#41413c"
+        android:text="Valor da Conta"/>
+    <EditText
+        android:id="@+id/EditValor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#41413c"
+        android:text="XX/YY/ZZZZ"/>
+    <EditText
+        android:id="@+id/EditData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="showDatePicker"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#41413c"
+        android:text="Forma de pagamento"/>
+    <EditText
+        android:id="@+id/EditFpagamento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forma de recebimento"
+        android:textColor="#41413c"/>
+    <EditText
+        android:id="@+id/EditFrecebimento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#41413c"
+        android:text="Descrição"/>
+
+    <EditText
+        android:id="@+id/EditDescricao"
+        android:layout_width="match_parent"
+        android:layout_height="106dp" />
+
+    <Button
+        android:id="@+id/ConfirmeEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="confirmeEdit"
+        android:text="OK"/>
+    <Button
+        android:id="@+id/DeleteConta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="deleteEdit"
+        android:text="Delete"/>
+</LinearLayout>

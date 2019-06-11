@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ContaaddActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#41413c"
+        android:text="Origem da Conta"/>
+
+
+    <Spinner
+        android:id="@+id/spnaddsources"
+        android:layout_width="match_parent"
+        android:layout_height="35dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#41413c"
+        android:text="Valor da Conta"/>
+
+
+
+    <EditText
+        android:id="@+id/AddValor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#41413c"
+        android:text="XX/YY/ZZZZ"/>
+
+    <EditText
+        android:id="@+id/AddData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="showDatePicker"
+        android:focusable="false"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#41413c"
+        android:text="Forma de pagamento"/>
+
+
+
+    <EditText
+        android:id="@+id/AddFpagamento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#41413c"
+        android:text="Forma de recebimento"/>
+    <EditText
+        android:id="@+id/AddFrecebimento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#41413c"
+        android:text="Descrição"/>
+
+    <EditText
+        android:id="@+id/AddDescricao"
+        android:layout_width="match_parent"
+        android:layout_height="106dp" />
+
+    <Button
+        android:id="@+id/Confirme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="confirmeAdd"
+        android:text="OK"/>
+
+
+</LinearLayout>
